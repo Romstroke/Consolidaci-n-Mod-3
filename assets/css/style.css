@@ -11850,5 +11850,13 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  background-image: url("../img/fondopix2.jpg");
+  background-size: contain;
+}
+
+.chats {
+  flex-direction: row-reverse;
+}
 
 /*# sourceMappingURL=style.css.map */
