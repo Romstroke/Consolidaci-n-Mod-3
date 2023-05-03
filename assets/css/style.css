@@ -11853,6 +11853,15 @@ textarea.form-control-lg {
 body {
   background-image: url("../img/fondopix2.jpg");
   background-size: contain;
+  margin: 0;
+  padding: 0;
+}
+
+.chatIN {
+  background-color: rgb(247, 199, 128);
+  width: 60%;
+  height: 20%;
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

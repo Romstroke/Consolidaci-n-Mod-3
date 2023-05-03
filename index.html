@@ -9,40 +9,23 @@
     <title>Práctica consolidación Mod3</title>
 </head>
 <body>
-    <!-- Chat para vendedores y equipo de soporte  -->
-    <!-- Con Boostrap Sass y git -->
-<!-- 
-    <button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-light">Light</button>
-<button type="button" class="btn btn-dark">Dark</button>
-
-<button type="button" class="btn btn-link">Link</button> -->
-
 <!-- NAVBAR -->
 <div class="container-fluid sticky-top">
     <div class="row">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">El mejor chat de tu vida</a>
+
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <p>
-                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-                          Conversaciones<br>recientes
-                        </button>
-                      </p>
+                    <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample">Contactos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample">Último chat</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -65,33 +48,117 @@
           </nav>
     </div>
 </div>
-<!-- CONVERSACIONES -->
-<div class="chats container">
-    <div class="row">
-       <!-- el botón lo dejé en navbar -->
-          <div style="min-height: 120px;">
-            <div class="collapse collapse-horizontal" id="collapseWidthExample">
-              <div class="card card-body" style="width: 300px;">
-                This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
-              </div>
+
+<!-- CONVERSACIONES EN MOBILE-->
+<div class="container d-md-none">
+  <div class="row">
+   
+     <div style="min-height: 120px;">
+      <div class="collapse collapse-horizontal" id="collapseWidthExample">
+        <div class="card card-body" style="width: 300px;">
+          <div class="col-3 d-flex justify-content-start">
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Contacto1</h5>
+                    <small>Ahora</small>
+                  </div>
+                  <img class="img-fluid" src="https://picsum.photos/id/250/60/60" alt="">
+                  <p class="mb-1 d-flex justify-content-center mx-0">Holaholaholahola contestameee</p>
+                  <small class="d-flex justify-content-end">hora</small>
+              </a> 
             </div>
-          </div>
-          <div style="min-height: 120px;">
-            <div class="collapse collapse-horizontal" id="collapseWidthExample">
-              <div class="card card-body" style="width: 300px;">
-                This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
-              </div>
-            </div>
-          </div>
-          <div style="min-height: 120px;">
-            <div class="collapse collapse-horizontal" id="collapseWidthExample">
-              <div class="card card-body" style="width: 300px;">
-                This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
-              </div>
-            </div>
-          </div>
-    </div>
+          </div> 
+        </div>
+      </div>
+     </div>
+  
+  </div>
 </div>
+
+
+<!-- SECCION DE CHATS -->
+     <div class="container-fluid">
+       <div class="row"> 
+
+          <!-- BARRA LISTA DE CHATS DE CONTACTOS -->
+
+              <div class="col-3 d-flex justify-content-start d-none d-md-block">
+
+                <div class="list-group">
+                  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Fernando Fernandez</h5>
+                        <small>Ahora</small>
+                      </div>
+                      <img class="img-fluid" src="https://picsum.photos/id/250/60/60" alt="">
+                      <p class="mb-1 d-flex justify-content-center mx-0">Hola cómo estas, q...</p>
+                      <small class="d-flex justify-content-end">hora</small>
+                  </a> 
+
+                </div>
+
+              </div> 
+
+          <!-- <div class="col-8 d-flex justify-content-end">
+            <img class="img-fluid" src="https://picsum.photos/id/237/50/30" alt="">
+          </div> -->
+
+          <div class="col-9 d-none d-md-block">
+
+               <!-- CABECERA CHAT SELECCIONADO -->
+
+            <div class="container-fluid">
+              <div class="row">
+                <ul class="col-10 nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Chat</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Archivos</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contacto</button>
+                  </li>
+                </ul>
+                
+                
+                <div class="tab-content bg-body-tertiary" id="myTabContent">
+                  <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                      <!-- CHAT SELECCIONADO -->
+
+                    <div class="container">
+                      <div class="chatIN row justify-content-start">
+                            <div class="col-2">
+                                <img src="https://picsum.photos/id/250/60/60" class="img-fluid align-self-center" alt="">
+                            </div>
+                            <div class="col-10">
+                                <h4>Fernando Fernandez</h4>
+                                <p>Hola cómo estas, quería decirte que el otro dia fui para allá y no pude hacer otra cosa mas que ir para allá.</p>
+                                <div class="d-flex justify-content-end">
+                                <p>Hoy 00.00 pm</p>
+                                </div>
+                            </div>
+                      </div>
+                      </div>
+                    </div>
+                  <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                    <img src="https://picsum.photos/id/1040/100/100" alt="">
+                  </div>
+                  <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                    <h5>Fernando Fernandez</h5>
+                    <p>Celular: +56912345678</p>
+                  </div>
+                 
+                </div>
+          
+              </div>
+            </div>
+  
+          </div>
+
+       </div>
+      </div> 
 
 
 <script src="assets/js/bootstrap5.3/bootstrap.bundle.min.js"></script>
