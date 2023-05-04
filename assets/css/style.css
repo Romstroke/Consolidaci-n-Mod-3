@@ -11853,8 +11853,25 @@ textarea.form-control-lg {
 body {
   background-image: url("../img/fondopix2.jpg");
   background-size: contain;
+  background-position: fixed;
   margin: 0;
   padding: 0;
+}
+
+#myTab, #myTabContent {
+  padding-top: 1.5%;
+}
+
+#myTabContent {
+  min-height: 60vh;
+}
+
+.cabeceraItem {
+  width: 100px;
+}
+
+.list-group {
+  padding-top: 5%;
 }
 
 .chatIN {
@@ -11862,6 +11879,20 @@ body {
   width: 60%;
   height: 20%;
   border-radius: 20px;
+  margin-top: 1%;
+}
+.chatIN--L {
+  background-color: aqua;
+}
+
+.fotoPanel {
+  margin: 2%;
+  z-index: 10;
+  right: 25px;
+}
+.fotoPanel img {
+  border-radius: 50%;
+  border: solid 15px white;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,43 @@
 
+#myTab, #myTabContent{
+    padding-top: 1.5%;
+    
+}
+
+#myTabContent{
+    min-height: 60vh;
+    
+}
+
+.cabeceraItem{
+    width: 100px;
+}
+
+.list-group{
+    padding-top: 5%;
+}
+
 .chatIN{
     background-color: rgb(247, 199, 128);
     width: 60%;
     height: 20%;   
     border-radius: 20px; 
+    margin-top: 1%;
+
+    &--L{
+      background-color: aqua;
+    }
 }
+
+.fotoPanel{
+
+    margin: 2%;
+    z-index: 10;
+    right: 25px;
+
+    & img {
+        border-radius: 50%;
+        border: solid 15px white;
+    }
+}
+

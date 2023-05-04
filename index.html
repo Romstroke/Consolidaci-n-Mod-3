@@ -10,13 +10,11 @@
 </head>
 <body>
 <!-- NAVBAR -->
-<div class="container-fluid sticky-top">
-    <div class="row">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container-fluid sticky-top">
               <a class="navbar-brand" href="#">El mejor chat de tu vida</a>
 
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler bg-warning-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -25,56 +23,55 @@
                     <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample">Contactos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample">Último chat</a>
+                    <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample">Último chat? </a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
+                      Opciones
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Bloquear a todos</a></li>
+                      <li><a class="dropdown-item" href="#">Silenciar a todos</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
                     </ul>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Buscar chat" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #671e59;"></i></button>
+                  <button class="btn bg-warning-subtle" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #671e59;"></i></button>
                 </form>
               </div>
             </div>
           </nav>
-    </div>
-</div>
 
 <!-- CONVERSACIONES EN MOBILE-->
-<div class="container d-md-none">
-  <div class="row">
-   
-     <div style="min-height: 120px;">
-      <div class="collapse collapse-horizontal" id="collapseWidthExample">
-        <div class="card card-body" style="width: 300px;">
-          <div class="col-3 d-flex justify-content-start">
-            <div class="list-group">
-              <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">Contacto1</h5>
-                    <small>Ahora</small>
+      <div class="container-fluid d-md-none ps-5">
+        <div class="row">
+        
+          <div style="min-height: 120px;">
+            <div class="collapse collapse-vertical" id="collapseWidthExample">
+              <div class="card card-body" style="width: 100%;">
+                <div class="col-3 d-flex justify-content-start">
+                  <div class="list-group" style="width: 100%;">
+                    <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                        <div class="d-flex w-500 justify-content-between">
+                          <h5 class="mb-1">Fernando Fernandez</h5>
+                          <small>Teléfono</small>
+                          <img class="img-fluid d-flex justify-content-start" src="https://picsum.photos/id/250/60/60" alt="">
+                        </div>
+                        
+                        <p class="mb-1 d-flex justify-content-center mx-0"></p>
+                        <small class="col-6 d-flex justify-content-end">Conectado</small>
+                    </a> 
                   </div>
-                  <img class="img-fluid" src="https://picsum.photos/id/250/60/60" alt="">
-                  <p class="mb-1 d-flex justify-content-center mx-0">Holaholaholahola contestameee</p>
-                  <small class="d-flex justify-content-end">hora</small>
-              </a> 
+                </div> 
+              </div>
             </div>
-          </div> 
+          </div>
+        
         </div>
       </div>
-     </div>
-  
-  </div>
-</div>
 
 
 <!-- SECCION DE CHATS -->
@@ -91,7 +88,9 @@
                         <h5 class="mb-1">Fernando Fernandez</h5>
                         <small>Ahora</small>
                       </div>
+                      <div>
                       <img class="img-fluid" src="https://picsum.photos/id/250/60/60" alt="">
+                      </div>
                       <p class="mb-1 d-flex justify-content-center mx-0">Hola cómo estas, q...</p>
                       <small class="d-flex justify-content-end">hora</small>
                   </a> 
@@ -100,35 +99,44 @@
 
               </div> 
 
-          <!-- <div class="col-8 d-flex justify-content-end">
-            <img class="img-fluid" src="https://picsum.photos/id/237/50/30" alt="">
-          </div> -->
+       
+         <!-- CABECERA CHAT SELECCIONADO -->
 
           <div class="col-9 d-none d-md-block">
 
-               <!-- CABECERA CHAT SELECCIONADO -->
 
             <div class="container-fluid">
-              <div class="row">
-                <ul class="col-10 nav nav-tabs" id="myTab" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Chat</button>
+              <div class="row ">
+                <ul class="col-11 position-relative nav nav-tabs fw-semibold" id="myTab" role="tablist">
+                  <li class="col-1 cabeceraItem nav-item" role="presentation">
+                    <button class="nav-link active d-flex align-items-center px-10" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Chat</button>
                   </li>
-                  <li class="nav-item" role="presentation">
+
+                  <li class="col-2 cabeceraItem nav-item" role="presentation">
                     <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Archivos</button>
                   </li>
-                  <li class="nav-item" role="presentation">
+                  <li class="col-2 cabeceraItem nav-item" role="presentation">
                     <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contacto</button>
                   </li>
+                  <div class="fotoPanel col-8 d-flex justify-content-end position-absolute top-0 ">
+
+                    <div class="d-flex align-items-center">
+                        <p class="fs-4 d-flex align-self-start">Fernando Fernandez</p>
+                       <img  class="img-fluid" src="https://picsum.photos/id/250/160/160" alt="">
+                    </div>
+                     
+                     
+                  </div>
                 </ul>
                 
                 
-                <div class="tab-content bg-body-tertiary" id="myTabContent">
+                <div class="col-11 tab-content bg-white bg-opacity-75" id="myTabContent">
                   <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
                       <!-- CHAT SELECCIONADO -->
 
-                    <div class="container">
-                      <div class="chatIN row justify-content-start">
+                    <div class="container ">
+                      <div class=" row justify-content-start">
+                        <div class="chatIN">
                             <div class="col-2">
                                 <img src="https://picsum.photos/id/250/60/60" class="img-fluid align-self-center" alt="">
                             </div>
@@ -139,12 +147,35 @@
                                 <p>Hoy 00.00 pm</p>
                                 </div>
                             </div>
+                        </div>
                       </div>
                       </div>
+
+                      <div class="container ">
+                        <div class="row justify-content-end">
+                          <div class="chatIN chatIN--L">
+                              <div class="col-2">
+                                  <img src="https://picsum.photos/id/250/60/60" class="img-fluid align-self-center" alt="">
+                              </div>
+                              <div class="col-10">
+                                  <h4>Fernando Fernandez</h4>
+                                  <p>Hola cómo estas, quería decirte que el otro dia fui para allá y no pude hacer otra cosa mas que ir para allá.</p>
+                                  <div class="d-flex justify-content-end">
+                                  <p>Hoy 00.00 pm</p>
+                                  </div>
+                              </div>
+                          </div>    
+                        </div>
+                        </div>
+
                     </div>
+
                   <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                    <img src="https://picsum.photos/id/1040/100/100" alt="">
+                    <img src="https://picsum.photos/id/1040/200/200" alt="">
+                    <img src="https://picsum.photos/id/1067/200/200" alt="">
+                    <img src="https://picsum.photos/id/237/200/200" alt="">
                   </div>
+
                   <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
                     <h5>Fernando Fernandez</h5>
                     <p>Celular: +56912345678</p>
