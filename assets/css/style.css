@@ -11868,6 +11868,7 @@ body {
 
 .cabeceraItem {
   width: 100px;
+  margin: 0;
 }
 
 .list-group {
@@ -11893,6 +11894,10 @@ body {
 .fotoPanel img {
   border-radius: 50%;
   border: solid 15px white;
+}
+
+.fotoBarra img {
+  border-radius: 20%;
 }
 
 /*# sourceMappingURL=style.css.map */

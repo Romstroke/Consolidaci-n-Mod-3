@@ -10,9 +10,9 @@
 </head>
 <body>
 <!-- NAVBAR -->
-          <nav class="navbar navbar-expand-lg bg-white">
-            <div class="container-fluid sticky-top">
-              <a class="navbar-brand" href="#">El mejor chat de tu vida</a>
+          <nav class="navbar navbar-expand-lg bg-white sticky-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">El mejor chat de tu vida<i class="fa-solid fa-comment-dots fa-lg" style="color: #d08fd1;"></i></a>
 
               <button class="navbar-toggler bg-warning-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -80,19 +80,79 @@
 
           <!-- BARRA LISTA DE CHATS DE CONTACTOS -->
 
-              <div class="col-3 d-flex justify-content-start d-none d-md-block">
+              <div class="col-3 d-flex justify-content-start d-none d-md-block ps-5">
 
                 <div class="list-group">
-                  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                  <a href="#" class="list-group-item list-group-item-action list-group-item-info" aria-current="true">
                       <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-1">Fernando Fernandez</h5>
                         <small>Ahora</small>
                       </div>
-                      <div>
-                      <img class="img-fluid" src="https://picsum.photos/id/250/60/60" alt="">
+                      <div class="fotoBarra d-flex">
+                          <img class="col-4" src="https://picsum.photos/id/250/60/60" alt="">
+                          <p class="col-8 mb-1 d-flex justify-content-start ps-2 pt-2">Hola cómo estas, q...</p>
                       </div>
-                      <p class="mb-1 d-flex justify-content-center mx-0">Hola cómo estas, q...</p>
-                      <small class="d-flex justify-content-end">hora</small>
+                      <small class="d-flex justify-content-end fw-bold">Nuevo</small>
+                  </a> 
+
+                  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">Marian</h5>
+                      <small>Ayer</small>
+                    </div>
+                    <div class="fotoBarra d-flex">
+                        <img class="col-4" src="https://picsum.photos/id/270/60/60" alt="">
+                        <p class="col-8 mb-1 d-flex justify-content-start ps-2 pt-2">Listo! Ya envié los correos que...</p>
+                    </div>
+                    <small class="d-flex justify-content-end">Visto</small>
+                  </a> 
+
+                  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">Desconocido</h5>
+                      <small>1 feb</small>
+                    </div>
+                    <div class="fotoBarra d-flex">
+                        <img class="col-4" src="https://picsum.photos/id/281/60/60" alt="">
+                        <p class="col-8 mb-1 d-flex justify-content-start ps-2 pt-2">No, sabes que no fun...</p>
+                    </div>
+                    <small class="d-flex justify-content-end">Visto</small>
+                  </a> 
+
+                  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">+78 43 2111234</h5>
+                      <small>--</small>
+                    </div>
+                    <div class="fotoBarra d-flex">
+                        <img class="col-4" src="https://picsum.photos/id/321/60/60" alt="">
+                        <p class="col-8 mb-1 d-flex justify-content-start ps-2 pt-2">Hola, quieres dinero gratis?...</p>
+                    </div>
+                    <small class="d-flex justify-content-end">--</small>
+                  </a> 
+                  
+                  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">Banco Ripley</h5>
+                      <small>--</small>
+                    </div>
+                    <div class="fotoBarra d-flex">
+                        <img class="col-4" src="https://picsum.photos/id/1/60/60" alt="">
+                        <p class="col-8 mb-1 d-flex justify-content-start ps-2 pt-2">Estimado cliente, nos debe chorromil...</p>
+                    </div>
+                    <small class="d-flex justify-content-end">--</small>
+                  </a> 
+                  
+                  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">Parque del recuerdo</h5>
+                      <small>--</small>
+                    </div>
+                    <div class="fotoBarra d-flex">
+                        <img class="col-4" src="https://picsum.photos/id/10/60/60" alt="">
+                        <p class="col-8 mb-1 d-flex justify-content-start ps-2 pt-2">Pack ataúd 2 plazas + espacio!!!...</p>
+                    </div>
+                    <small class="d-flex justify-content-end">--</small>
                   </a> 
 
                 </div>
@@ -122,7 +182,7 @@
 
                     <div class="d-flex align-items-center">
                         <p class="fs-4 d-flex align-self-start">Fernando Fernandez</p>
-                       <img  class="img-fluid" src="https://picsum.photos/id/250/160/160" alt="">
+                       <img  class="img-fluid" src="https://picsum.photos/id/250/200/200" alt="">
                     </div>
                      
                      
@@ -178,7 +238,11 @@
 
                   <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
                     <h5>Fernando Fernandez</h5>
+                    <p><i>"El futuro es incierto"</i></p>
                     <p>Celular: +56912345678</p>
+                    <p>Correo: fefo_fez@mail.com</p>
+                    <p>Dirección: Zuca Saenel Monte #123</p>
+                    
                   </div>
                  
                 </div>
