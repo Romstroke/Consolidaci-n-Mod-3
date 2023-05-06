@@ -11850,6 +11850,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.nav-color {
+  background-color: rgba(191, 232, 245, 0.795);
+}
+
 body {
   background-image: url("../img/fondopix2.jpg");
   background-size: contain;
@@ -11872,18 +11876,37 @@ body {
 }
 
 .list-group {
-  padding-top: 5%;
+  padding: 0;
+  margin: 0;
+  border-radius: 20px;
+}
+.list-group img {
+  border-radius: 20px;
+  border: rgba(255, 188, 3, 0.596) solid 2px;
 }
 
 .chatIN {
   background-color: rgb(247, 199, 128);
-  width: 60%;
+  width: 40%;
   height: 20%;
-  border-radius: 20px;
+  border-radius: 0 40px 40px 40px;
   margin-top: 1%;
+  margin-left: 70px;
+}
+.chatIN img {
+  border-radius: 50%;
+  margin-left: -80px;
+  margin-top: 0;
 }
 .chatIN--L {
-  background-color: aqua;
+  background-color: rgb(170, 240, 240);
+  border-radius: 40px 0 40px 40px;
+  margin-right: 80px;
+}
+.chatIN--L img {
+  border-radius: 50%;
+  margin-right: -720px;
+  margin-top: 0;
 }
 
 .fotoPanel {
@@ -11894,6 +11917,9 @@ body {
 .fotoPanel img {
   border-radius: 50%;
   border: solid 15px white;
+}
+.fotoPanel p {
+  display: inline-flex;
 }
 
 .fotoBarra img {

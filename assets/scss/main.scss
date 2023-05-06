@@ -1,17 +1,14 @@
 //abstracts
 
 //vendor
-// $body-bg: rgb(141, 168, 175);
 
-// $theme-colors:{
-
-// }
 
 @import "vendor/bootstrap5.3/scss/bootstrap.scss";
 
 //base
 
 //layout
+@import "layout/nav";
 @import "layout/body";
 @import "layout/chats";
 //components
