@@ -12,7 +12,7 @@
        <!-- NAVBAR -->
           <nav class="navbar navbar-expand-lg bg-white sticky-top">
             <div class="nav-color container-fluid">
-              <a class="navbar-brand" href="#">El mejor chat de tu vida<i class="fa-solid fa-comment-dots fa-lg" style="color: #d08fd1;"></i></a>
+              <a class="navbar-brand" href="#" title="Sé que se puede ver mejor, y el código también.">El mejor chat de tu vida<i class="fa-solid fa-comment-dots fa-lg" style="color: #d08fd1;"></i></a>
               <button class="navbar-toggler bg-warning-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -21,9 +21,9 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample">Contactos</a>
                   </li>
-                  <li class="nav-item">
+                  <!-- <li class="nav-item">
                     <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample">Último chat? </a>
-                  </li>
+                  </li> -->
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Opciones
@@ -44,7 +44,7 @@
             </div>
           </nav>
 
-      <!-- CONTACTOS EN MOBILE-->
+     
       <!-- <div class="container-fluid d-md-none ps-5">
         <div class="row">
         
@@ -56,6 +56,8 @@
         
         </div>
       </div> -->
+
+       <!-- CONTACTOS EN MOBILE-->
 
       <div class="card card-body container-fluid my-3 d-md-none">
         <div class="row">
@@ -137,7 +139,6 @@
         </div> 
       </div>
       
-
       <div class="card card-body container-fluid my-3 d-md-none">
         <div class="row">
           <div class="list-group">
@@ -158,28 +159,28 @@
         </div> 
       </div>
       
-      
-
-     <!-- SECCION DE CHATS -->
+           <!-- SECCION DE CHATS -->
      <div class="container-fluid">
        <div class="row"> 
 
           <!-- BARRA LISTA DE CHATS DE CONTACTOS -->
 
-              <div class="col-3 d-flex justify-content-start d-none d-md-block ps-5">
+              <div class="col-md-4 col-xl-3 d-flex justify-content-start d-none d-md-block ps-5 mt-3">
 
                 <div class="list-group">
-                  <a href="#" class="list-group-item list-group-item-action list-group-item-info" aria-current="true">
-                      <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Fernando Fernandez</h5>
-                        <small>Ahora</small>
-                      </div>
-                      <div class="fotoBarra d-flex">
-                          <img class="col-4" src="https://picsum.photos/id/250/60/60" alt="">
-                          <p class="col-8 mb-1 d-flex justify-content-start ps-2 pt-2">Hola cómo estas, q...</p>
-                      </div>
-                      <small class="d-flex justify-content-end fw-bold">Nuevo</small>
-                  </a> 
+                  <div id="cajaRemitente">
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-info" aria-current="true">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 id="remitenteNuevo" class="mb-1">Fernando Fernandez</h5>
+                          <small>Ahora</small>
+                        </div>
+                        <div class="fotoBarra d-flex">
+                            <img class="col-4" src="https://picsum.photos/id/250/60/60" alt="">
+                            <p class="col-8 mb-1 d-flex justify-content-start ps-2 pt-2">Hola cómo estas, q...</p>
+                        </div>
+                        <small id="nuevoActivo" class="d-flex justify-content-end">Nuevo</small>
+                    </a> 
+                  </div>
 
                   <a href="#" class="list-group-item list-group-item-action" aria-current="true">
                     <div class="d-flex w-100 justify-content-between">
@@ -248,7 +249,7 @@
        
          
 
-          <div class="col-9 d-none d-md-block">
+          <div class="col-md-8 col-xl-9 d-none d-md-block">
 
                <!-- CABECERA CHAT SELECCIONADO -->
             <div class="container-fluid">
@@ -256,17 +257,20 @@
 
                 <ul class="col-11 position-relative nav nav-tabs fw-semibold" id="myTab" role="tablist">
                     <li class="col-1 cabeceraItem nav-item" role="presentation">
-                      <button class="nav-link active d-flex align-items-center px-10" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Chat</button>
+                      <button class="nav-link link-dark active d-flex align-items-center px-10" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Chat</button>
                     </li>
                     <li class="col-2 cabeceraItem nav-item" role="presentation">
-                      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Archivos</button>
+                      <button class="nav-link link-dark" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Archivos</button>
                     </li>
                     <li class="col-2 cabeceraItem nav-item" role="presentation">
-                      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contacto</button>
+                      <button class="nav-link link-dark" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contacto</button>
                     </li>
-                    <div class="fotoPanel col-8 d-flex justify-content-end position-absolute top-0">
+                    <div class="fotoPanel col-8 d-md-none d-xl-flex justify-content-end position-absolute top-0">
                       <div class="d-flex align-items-center">
-                          <p class="fs-4 d-flex align-self-start">Fernando Fernandez<br><span class="fs-5">En línea</span></p>
+                        <div class="row align-self-start justify-content-end">
+                          <p class="fs-4 d-flex align-self-start justify-content-end">Fernando Fernandez</p>
+                          <small class="d-flex justify-content-end">En línea</small>
+                        </div>  
                           <img  class="img-fluid" src="https://picsum.photos/id/250/200/200" alt="">
                       </div>
                     </div>
@@ -341,5 +345,6 @@
 
 
 <script src="assets/js/bootstrap5.3/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
