@@ -11927,6 +11927,7 @@ body {
 }
 
 #cajaRemitente #remitenteNuevo, #cajaRemitente #nuevoActivo {
+  font-style: bold;
   font-weight: 700;
 }
 
