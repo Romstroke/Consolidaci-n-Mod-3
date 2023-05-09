@@ -11901,7 +11901,6 @@ body {
 .chatIN--L {
   background-color: rgb(241, 224, 196);
   border-radius: 40px 0 40px 40px;
-  margin-right: 80px;
 }
 .chatIN--L img {
   border-radius: 50%;
@@ -11924,11 +11923,6 @@ body {
 
 .fotoBarra img {
   border-radius: 20%;
-}
-
-#cajaRemitente #remitenteNuevo, #cajaRemitente #nuevoActivo {
-  font-style: bold;
-  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */
